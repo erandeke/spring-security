@@ -1,0 +1,13 @@
+package com.kedar.spring.security.resource;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class BusinessController {
+
+    @GetMapping("/page")
+    public String getValue() {
+        return "Welcome";
+    }
+}
